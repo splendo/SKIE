@@ -11,11 +11,9 @@ skiePublishing {
 gradlePlugin {
     website = "https://skie.touchlab.co"
     vcsUrl = "https://github.com/touchlab/SKIE.git"
-    isAutomatedPublishing = false
-
     plugins {
-        create("co.touchlab.skie") {
-            id = "co.touchlab.skie"
+        create("com.splendo.skie") {
+            id = "com.splendo.skie"
             displayName = "Swift and Kotlin, unified"
             implementationClass = "co.touchlab.skie.plugin.SkieGradlePlugin"
             version = project.version
