@@ -65,17 +65,4 @@ projectStructure {
         val `plugin-shim-impl` by module
     }
 
-    val `acceptance-tests` by module {
-        val `acceptance-tests-framework` by module("framework")
-
-        val functional by module()
-        val libraries by module()
-
-        val `type-mapping` by module {
-            val `test-dependencies` by module {
-                val `regular-dependency` by module("regular")
-                val `exported-dependency` by module("exported")
-            }
-        }
-    }
 }
