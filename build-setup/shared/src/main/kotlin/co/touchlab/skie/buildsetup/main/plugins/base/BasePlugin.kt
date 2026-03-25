@@ -6,7 +6,7 @@ import org.gradle.api.Project
 abstract class BasePlugin : Plugin<Project> {
 
     override fun apply(project: Project): Unit = with(project) {
-        group = "com.splendo.skie"
+        group = "co.touchlab.skie"
         version = System.getenv("RELEASE_VERSION").orEmpty().ifBlank { "1.0.0-SNAPSHOT" }
     }
 }

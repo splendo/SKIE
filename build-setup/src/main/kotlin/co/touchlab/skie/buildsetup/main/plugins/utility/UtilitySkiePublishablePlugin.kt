@@ -51,6 +51,7 @@ abstract class UtilitySkiePublishablePlugin : Plugin<Project> {
     private fun Project.configureMavenPublishing() {
         extensions.configure<MavenPublishBaseExtension> {
             publishToMavenCentral(automaticRelease = true)
+            coordinates(groupId = "com.splendo.skie")
         }
     }
 
