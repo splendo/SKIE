@@ -11,6 +11,7 @@ skiePublishing {
 gradlePlugin {
     website = "https://skie.touchlab.co"
     vcsUrl = "https://github.com/touchlab/SKIE.git"
+    isAutomatedPublishing = false
 
     plugins {
         create("co.touchlab.skie") {
