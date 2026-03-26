@@ -6,7 +6,7 @@ val Project.mavenArtifactId: String
     get() = "skie" + this.path.replace(":", "-")
 
 val Project.dependencyModule: String
-    get() = "$group:$name"
+    get() = "com.splendo.skie:$name"
 
 val Project.dependencyCoordinate: String
     get() = "$dependencyModule:$version"
